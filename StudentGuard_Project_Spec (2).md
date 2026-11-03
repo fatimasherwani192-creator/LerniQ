@@ -1,4 +1,5 @@
 # StudentGuard: Project Specification
+Updated via GitHub.
 
 This file is the single source of truth for the StudentGuard documentation website and, later, the application. Do not invent facts, numbers or claims that are not in this file. If something is missing, write "To be decided" and list it under Open Questions.
 
