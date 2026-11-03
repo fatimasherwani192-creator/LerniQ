@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Problem statement | LearniQ Docs</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="problem-statement">
+<main class="doc" id="content">
+<h1>Problem statement</h1>
+<p class="lead">Problem AI-03, Student Performance Prediction.</p>
+<div class="callout tip"><strong>Summary</strong>This page describes why students may need academic support before exams and the early-warning output LearniQ is intended to provide.</div>
+
+<h2>The problem</h2>
+<p>Students may not recognise declining academic performance until examinations. Attendance drops, internal marks slip and assignments go missing, but nobody sees the pattern early enough to act.</p>
+
+<h2>The task</h2>
+<p>Use sample attendance, internal marks and assignment scores to identify students who may need academic support.</p>
+
+<h2>Expected output</h2>
+<div class="tbl"><table>
+<tr><th>Output</th><th>Description</th></tr>
+<tr><td>Risk level</td><td>A risk level for every student: <span class="pill high">High</span>, <span class="pill medium">Medium</span> or <span class="pill low">Low</span>.</td></tr>
+<tr><td>Teacher dashboard</td><td>A list of students who may need academic support.</td></tr>
+<tr><td>Early warning</td><td>A warning before exams, not after results.</td></tr>
+</table></div>
+
+<h2>Why existing tools are not enough</h2>
+<div class="tbl"><table>
+<tr><th>Today</th><th>Gap</th></tr>
+<tr><td>College ERP stores attendance, marks, assignments and fees</td><td>It records data but does not warn when performance falls.</td></tr>
+<tr><td>Faculty report marks after internals</td><td>The warning arrives after the result, when it is too late to change it.</td></tr>
+<tr><td>Each faculty member sees one subject</td><td>Nobody sees the combined pattern across subjects.</td></tr>
+<tr><td>Students see numbers only</td><td>They do not know their risk or what to improve.</td></tr>
+</table></div>
+
+<h2>Worked example</h2>
+<div class="callout warn"><strong>SAMPLE data — made-up student</strong>Sample Student has 58% attendance, marks that fell across the last 3 tests, and 4 assignments pending. Illustrative dashboard outcome: <span class="pill high">High</span>. The reasons shown are the attendance, falling marks and pending assignments; the exact risk-level thresholds are to be tuned using validation data.</div>
+
+<h2>Common questions</h2>
+<h3>We already have an ERP. Why this?</h3>
+<p>The ERP stores data but does not warn. LearniQ is an add-on: export a CSV and it gives risk levels.</p>
+<h3>Faculty already tell us who failed. Why is this different?</h3>
+<p>Faculty report after results. LearniQ flags risk before results and looks across all subjects together.</p>
+<h3>How accurate is it?</h3>
+<p>No model is 100% accurate. It focuses on Recall so at-risk students are not missed, and accuracy is measured on the institute's own data during the pilot.</p>
+<h3>What if a prediction is wrong?</h3>
+<p>The teacher makes the final decision. The system provides a priority list with reasons.</p>
+
+<h2>Related pages</h2>
+<div class="cards">
+<a class="card" href="solution.html"><span class="tag">Overview</span><h3>Solution</h3><p>How data becomes a risk level.</p></a>
+<a class="card" href="key-features.html"><span class="tag">Overview</span><h3>Key features</h3><p>Planned features grouped by priority and role.</p></a>
+<a class="card" href="../02-users-roles/teacher.html"><span class="tag">Users and roles</span><h3>Teacher</h3><p>The role that reviews at-risk students and records support.</p></a>
+</div>
+</main>
+<script src="../js/main.js" data-root="../"></script>
+</body>
+</html>

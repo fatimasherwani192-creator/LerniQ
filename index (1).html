@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearniQ | Student performance early-warning</title>
+<meta name="description" content="LearniQ documentation for an early-warning system for student performance.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<main class="doc" id="content">
+
+<section class="hero">
+<h1>Know who needs help before the exam does</h1>
+<p>LearniQ sits on top of your college ERP. It reads attendance, internal marks and assignments, flags students who may need support, and explains why.</p>
+<div class="hero-actions">
+<a class="cta" href="01-overview/problem-statement.html">Read the problem</a>
+<a class="cta ghost" href="01-overview/solution.html">See the solution</a>
+</div>
+</section>
+
+<h2>What the teacher sees</h2>
+<p>A colour-coded list with a plain reason for every student. The rows below are made-up sample data.</p>
+<div class="riskbox">
+<div class="cap">Sample at-risk list</div>
+<div class="riskrow"><strong>Student A</strong><span class="pill high">High</span><span class="why">Attendance 58%, marks fell in the last 3 tests, 4 assignments pending</span></div>
+<div class="riskrow"><strong>Student B</strong><span class="pill medium">Medium</span><span class="why">Attendance 72%, marks dropped slightly since test 2</span></div>
+<div class="riskrow"><strong>Student C</strong><span class="pill low">Low</span><span class="why">Attendance 92%, marks improving, all assignments submitted</span></div>
+</div>
+
+<h2>How it works</h2>
+<ol class="steps">
+<li><strong>Export from the ERP</strong>Download attendance, internal marks and assignment data as a CSV file.</li>
+<li><strong>Upload to LearniQ</strong>The system checks the file and shows clear errors if a row is wrong.</li>
+<li><strong>Features are calculated</strong>Attendance percentage, average marks, marks trend and submission rate.</li>
+<li><strong>The model predicts risk</strong>Each student gets a risk level and a risk score.</li>
+<li><strong>Teachers act early</strong>The dashboard shows reasons and suggested actions, and teachers log the support they give.</li>
+</ol>
+
+<h2>Explore the documentation</h2>
+<div class="cards">
+<a class="card" href="01-overview/problem-statement.html"><span class="tag">Overview</span><h3>Problem statement</h3><p>The gap this project addresses and the task definition.</p></a>
+<a class="card" href="01-overview/solution.html"><span class="tag">Overview</span><h3>Solution</h3><p>How data becomes a risk level, step by step.</p></a>
+<a class="card" href="01-overview/key-features.html"><span class="tag">Overview</span><h3>Key features</h3><p>Features by priority and by user role.</p></a>
+<a class="card" href="02-users-roles/teacher.html"><span class="tag">Users and roles</span><h3>User roles</h3><p>What Super Admin, Admin, Teacher and Student can do.</p></a>
+</div>
+
+<div class="callout"><strong>Work in progress</strong>Sections on system design, the ML model, the API, deployment and business will be added one at a time.</div>
+</main>
+<script src="js/main.js" data-root=""></script>
+</body>
+</html>

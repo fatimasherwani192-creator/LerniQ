@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solution | LearniQ Docs</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="solution">
+<main class="doc" id="content">
+<h1>Solution</h1>
+<p class="lead">An add-on layer that sits on top of any existing college ERP. It does not replace the ERP.</p>
+
+<h2>How it works</h2>
+<ol>
+<li>Export attendance, internal marks and assignment data from the ERP as a CSV file.</li>
+<li>Upload the CSV to LearniQ. The system checks and cleans the data.</li>
+<li>Features are calculated: attendance percentage, average marks, marks trend and assignment submission rate.</li>
+<li>A machine learning model predicts each student's risk.</li>
+<li>The dashboard shows the risk level, the reasons and suggested actions.</li>
+</ol>
+
+<h2>Inputs and outputs</h2>
+<div class="tbl"><table>
+<tr><th>Input</th><th>Output</th></tr>
+<tr><td>Attendance percentage</td><td>Risk level and risk score</td></tr>
+<tr><td>Internal marks across tests</td><td>Reasons, for example "attendance 58%, marks fell in the last 3 tests"</td></tr>
+<tr><td>Assignment submission rate and scores</td><td>Suggested actions for the teacher and student</td></tr>
+</table></div>
+
+<h2>What makes it different</h2>
+<ul>
+<li><strong>Add-on, not replacement:</strong> works with the ERP the college already has.</li>
+<li><strong>Explainable:</strong> shows why a student is at risk, not only that they are.</li>
+<li><strong>Trend-based:</strong> detects falling marks before the next result.</li>
+<li><strong>Student view:</strong> students see their own risk and suggestions.</li>
+<li><strong>Action tracking:</strong> teachers log support given and see whether risk reduced.</li>
+</ul>
+
+<div class="note">The model supports faculty decisions. It does not replace them, and a teacher always makes the final call.</div>
+</main>
+<script src="../js/main.js" data-root="../"></script>
+</body>
+</html>
